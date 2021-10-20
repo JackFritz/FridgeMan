@@ -157,8 +157,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.0000076293945, y: -0.00000047683716}
-  m_SizeDelta: {x: 320.551, y: 43.378}
+  m_AnchoredPosition: {x: 28.357, y: -0.00000047683716}
+  m_SizeDelta: {x: 377.264, y: 43.378}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &292498383
 MonoBehaviour:
@@ -193,7 +193,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: INSTRUCTIONS GO HERE
+  m_Text: WASD TO MOVE   M TO SHOOT
 --- !u!222 &292498384
 CanvasRenderer:
   m_ObjectHideFlags: 0
