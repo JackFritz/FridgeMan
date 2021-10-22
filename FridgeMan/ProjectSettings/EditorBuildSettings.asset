@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Menus/Credits.unity
     guid: 55e78c41fb47d02449d44a77ba558114
+  - enabled: 1
+    path: Assets/Scenes/PancakeParadise.unity
+    guid: 0694f9fc1aacd4345a76faa6670d4d35
   m_configObjects: {}

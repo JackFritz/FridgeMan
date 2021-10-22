@@ -22,7 +22,7 @@ public class Reset : MonoBehaviour
         // if statement that loads the next scene
         if (collision.gameObject.name == "Player")
         {
-            SceneManager.LoadScene("MainMenu");
+            SceneManager.LoadScene("PancakeParadise");
         }
 
     }
