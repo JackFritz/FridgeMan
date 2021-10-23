@@ -9,6 +9,6 @@ public class StartGame : MonoBehaviour
 {
     public void NextButton()// hit start game button
     {
-        SceneManager.LoadScene("GridBattle");// loads game
+        SceneManager.LoadScene("PancakeParadise");// loads game
     }
 }
