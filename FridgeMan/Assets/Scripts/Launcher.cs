@@ -6,6 +6,7 @@ public class Launcher : MonoBehaviour
 {
     [SerializeField]
     private Transform[] firePoints;
+
     [SerializeField]
     private Rigidbody projectilePrefab;
     [SerializeField]
@@ -17,6 +18,7 @@ public class Launcher : MonoBehaviour
         {
             LaunchProjectile();
         }
+
     }
 
     private void LaunchProjectile()
