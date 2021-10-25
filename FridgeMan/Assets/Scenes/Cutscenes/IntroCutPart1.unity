@@ -321,6 +321,7 @@ GameObject:
   m_Component:
   - component: {fileID: 451833835}
   - component: {fileID: 451833836}
+  - component: {fileID: 451833837}
   m_Layer: 0
   m_Name: IntroCutP1
   m_TagString: Untagged
@@ -393,6 +394,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &451833837
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 451833834}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8e86200499ceeed488f13b1b15a73845, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &979222751
 GameObject:
   m_ObjectHideFlags: 0
@@ -729,7 +749,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0.28100002, y: 0.0943325}
-  m_AnchoredPosition: {x: 1.6329803, y: 0.1499939}
+  m_AnchoredPosition: {x: 1.6329651, y: 0.1499939}
   m_SizeDelta: {x: 3.2659988, y: 0.2989998}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1515412064
@@ -1135,7 +1155,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.702, y: 0}
   m_AnchorMax: {x: 1, y: 0.0943325}
-  m_AnchoredPosition: {x: 0.31599426, y: 1.0299988}
+  m_AnchoredPosition: {x: 0.315979, y: 1.0299988}
   m_SizeDelta: {x: -0.6329994, y: 2.0600004}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2051165685
