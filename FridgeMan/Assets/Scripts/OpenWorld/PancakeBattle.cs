@@ -7,6 +7,6 @@ public class PancakeBattle : MonoBehaviour
 {
     void OnTriggerEnter(Collider other)
     {    
-      SceneManager.LoadScene("GridBattle");  
+      SceneManager.LoadScene("FirstBattle");  
     }
 }
