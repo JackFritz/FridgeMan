@@ -21,7 +21,7 @@ public class EnemyHealth : MonoBehaviour
     private void Update()
     {
         //Debug.Log("HP: " + health.ToString() + "%");
-        PancakeHealthText.text = "Pancake: " + health.ToString() + "%";
+        PancakeHealthText.text = "HP: " + health.ToString() + "%";
         HealthBarFiller();
     }
 
