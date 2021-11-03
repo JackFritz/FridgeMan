@@ -26,4 +26,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Cutscenes/IntroCutPart2.unity
     guid: dc0242a963b952142b0427f8530dda25
+  - enabled: 1
+    path: Assets/Scenes/Cutscenes/FirstBattle.unity
+    guid: 3ef5906a9779a7a4a971ed4668de5663
+  - enabled: 1
+    path: Assets/Scenes/Cutscenes/BaconScene.unity
+    guid: 9f1fc9adf9e39254e917008e608810c0
+  - enabled: 1
+    path: Assets/Scenes/Cutscenes/WaffleScene.unity
+    guid: cec4d42c2852b5f419c33e41c61767c7
   m_configObjects: {}
