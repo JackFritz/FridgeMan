@@ -8,6 +8,7 @@ TagManager:
   - Projectile
   - RearProjectile
   - PlayerProjectile
+  - Waffle
   layers:
   - Default
   - TransparentFX
