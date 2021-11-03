@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - PancakeEnemy
+  - Projectile
+  - RearProjectile
+  - PlayerProjectile
   layers:
   - Default
   - TransparentFX

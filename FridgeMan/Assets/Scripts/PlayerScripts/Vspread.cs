@@ -2,19 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Launcher : MonoBehaviour
+public class Vspread : MonoBehaviour
 {
     [SerializeField]
     private Transform[] firePoints;
 
     [SerializeField]
     private Rigidbody projectilePrefab;
-    [SerializeField]
-    private float launchForce = 300f;
 
     public void Update()
     {
-        if (Input.GetKeyDown(KeyCode.M))
+        if (Input.GetKeyDown(KeyCode.K))
         {
             LaunchProjectile();
         }
@@ -29,8 +27,6 @@ public class Launcher : MonoBehaviour
                 projectilePrefab,
                 firePoint.position,
                 firePoint.rotation);
-
-            projectileInstance.AddForce(firePoint.forward * launchForce);
         }
     }
 }
