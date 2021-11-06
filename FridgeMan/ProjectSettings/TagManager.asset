@@ -9,6 +9,8 @@ TagManager:
   - RearProjectile
   - PlayerProjectile
   - Waffle
+  - Pancake
+  - Bacon
   layers:
   - Default
   - TransparentFX

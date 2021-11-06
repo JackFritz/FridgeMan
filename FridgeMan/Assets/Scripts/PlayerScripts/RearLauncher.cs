@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class RearLauncher : MonoBehaviour
 {
+    public Animator openAttack;
     float timer;
 
     [SerializeField]
@@ -25,6 +26,7 @@ public class RearLauncher : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.L) && timer <= 0)
         {
+            openAttack.SetTrigger("PlayerIsOpening");
             LaunchProjectile();
             timer = 2f;
         }

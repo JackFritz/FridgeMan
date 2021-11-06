@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Launcher : MonoBehaviour
 {
+    public Animator shoot;
     float Cooldown = 1f;
     float timer;
 
@@ -27,6 +28,7 @@ public class Launcher : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.M) && timer <= 0)
         {
+            shoot.SetTrigger("PlayerIsShooting");
             LaunchProjectile();
             timer = 0.5f;
         }

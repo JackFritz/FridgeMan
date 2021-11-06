@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Vspread : MonoBehaviour
 {
+    //public Animator vAttack;
+
     [SerializeField]
     private Transform[] firePoints;
 
@@ -14,6 +16,7 @@ public class Vspread : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.K))
         {
+            //vAttack.setTrigger("");
             LaunchProjectile();
         }
 

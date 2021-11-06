@@ -5,8 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class WaffleBattle : MonoBehaviour
 {
-    void OnTriggerEnter(Collider other)
+    void OnTriggerEnter(Collider collision)
     {
-        SceneManager.LoadScene("WaffleScene");
+        if (collision.gameObject.tag == "Waffle")
+        {
+            SceneManager.LoadScene("GridBattle2");
+        }
     }
 }

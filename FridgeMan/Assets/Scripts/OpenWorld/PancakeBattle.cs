@@ -5,8 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class PancakeBattle : MonoBehaviour
 {
-    void OnTriggerEnter(Collider other)
-    {    
-      SceneManager.LoadScene("FirstBattle");  
+    void OnTriggerEnter(Collider collision)
+    { 
+        if(collision.gameObject.tag == "Pancake")
+        {
+            SceneManager.LoadScene("FirstBattle");
+        }  
     }
 }

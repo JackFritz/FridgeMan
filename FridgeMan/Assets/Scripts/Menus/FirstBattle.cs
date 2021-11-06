@@ -7,6 +7,6 @@ public class FirstBattle : MonoBehaviour
 {
     public void NextButton()
     {
-        SceneManager.LoadScene("GridBattle2");
+        SceneManager.LoadScene("GridBattle");
     }
 }

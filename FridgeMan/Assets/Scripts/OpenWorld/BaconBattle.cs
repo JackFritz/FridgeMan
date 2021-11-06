@@ -5,8 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class BaconBattle : MonoBehaviour
 {
-    void OnTriggerEnter(Collider collider)
+    void OnTriggerEnter(Collider collision)
     {
-        SceneManager.LoadScene("BaconScene");
+        if (collision.gameObject.tag == "Bacon")
+        {
+            SceneManager.LoadScene("BaconScene");
+        }
+        
     }
 }

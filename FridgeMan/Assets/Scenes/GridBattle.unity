@@ -1114,6 +1114,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b16b24dbd3f193a4f97a662ce673dda7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  shoot: {fileID: 518509520}
   firePoints:
   - {fileID: 1584005580}
   projectilePrefab: {fileID: 9058361572569829794, guid: 6dde0c6b75358ab49b7f5c85916dc65d, type: 3}
@@ -1142,6 +1143,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a740a99691d4dd4f9fe395db4b6918e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  openAttack: {fileID: 518509520}
   firePoints:
   - {fileID: 1764433155}
   - {fileID: 1448480479}
