@@ -4495,9 +4495,9 @@ GameObject:
   - component: {fileID: 1128859645}
   - component: {fileID: 1128859649}
   - component: {fileID: 1128859650}
-  - component: {fileID: 1128859651}
   - component: {fileID: 1128859653}
   - component: {fileID: 1128859652}
+  - component: {fileID: 1128859651}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -4622,7 +4622,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1128859644}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 049e60cc7f23a594d82ef4451298855e, type: 3}
+  m_Script: {fileID: 11500000, guid: 210777e411e8c2f4ea366332c1d7ac6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   frostDamage: {fileID: 1128859653}
