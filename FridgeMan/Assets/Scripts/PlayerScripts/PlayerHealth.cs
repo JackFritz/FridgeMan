@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
 {
+    public AudioSource damageSound;
+
     public Text healthText;
     public Image healthBar;
 
@@ -43,6 +45,7 @@ public class PlayerHealth : MonoBehaviour
         if (other.gameObject.tag == "Projectile")
         {
             Debug.Log("trigger");
+            damageSound.Play();
             health -= 5;
         }
 

@@ -6,6 +6,9 @@ using UnityEngine.SceneManagement;
 
 public class EnemyHealth : MonoBehaviour
 {
+    public AudioSource frostDamage;
+    public AudioSource shootDamage;
+
     public Text PancakeHealthText;
     public Image PancakeHealthBar;
 
@@ -40,10 +43,12 @@ public class EnemyHealth : MonoBehaviour
         if (other.gameObject.tag == "PlayerProjectile")
         {
             //Debug.Log("trigger");
+            shootDamage.Play();
             health -= 5;
         }
         else if (other.gameObject.tag == "RearProjectile")
         {
+            frostDamage.Play();
             health -= 15;
         }
 

@@ -5,6 +5,9 @@ using UnityEngine.UI;
 
 public class WaffleHealth : MonoBehaviour
 {
+    public AudioSource frostDamage;
+    public AudioSource shootDamage;
+
     public Text WaffleHealthText;
     public Image WaffleHealthBar;
 
@@ -39,10 +42,12 @@ public class WaffleHealth : MonoBehaviour
         if (other.gameObject.tag == "PlayerProjectile")
         {
             //Debug.Log("trigger");
+            shootDamage.Play();
             health -= 10;
         }
         else if (other.gameObject.tag == "RearProjectile")
         {
+            frostDamage.Play();
             health -= 15;
         }
 
