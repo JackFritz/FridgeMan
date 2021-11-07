@@ -29,8 +29,8 @@ public class ThirdPersonMovement : MonoBehaviour
         }
         
        
-        animator.SetFloat("Speed", Mathf.Abs(horizontal));
-        //animator.SetFloat("Speed", Mathf.Abs(vertical));
+        animator.SetFloat("Horizontal", Mathf.Abs(horizontal));
+        animator.SetFloat("Vertical", Mathf.Abs(vertical));
 
 
         //flips the sprite

@@ -5,6 +5,12 @@ TagManager:
   serializedVersion: 2
   tags:
   - PancakeEnemy
+  - Projectile
+  - RearProjectile
+  - PlayerProjectile
+  - Waffle
+  - Pancake
+  - Bacon
   layers:
   - Default
   - TransparentFX
