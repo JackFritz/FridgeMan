@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class EnemyLauncher : MonoBehaviour
 {
+    public Animator pkShoot;
+
     [SerializeField]
     private Transform[] firePoints;
     [SerializeField]
@@ -25,14 +27,17 @@ public class EnemyLauncher : MonoBehaviour
 
     private void LaunchProjectile()
     {
+       
         foreach (var firePoint in firePoints)
         {
             var projectileInstance = Instantiate(
-                projectilePrefab,
+            projectilePrefab,
                 firePoint.position,
                 firePoint.rotation);
 
-            projectileInstance.AddForce(firePoint.forward * launchForce);
+            projectileInstance.AddForce(firePoint.forward * launchForce);          
         }
+        pkShoot.SetTrigger("PKIsShooting");
+
     }
 }
