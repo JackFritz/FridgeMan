@@ -1363,6 +1363,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07db517195f30324692459552a66ce70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  waffleAttack: {fileID: 1869253555}
   firePoints:
   - {fileID: 2082599661}
   - {fileID: 936556292}
@@ -4609,6 +4610,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0a0531542f2d984ea4714923a92c259, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pkShoot: {fileID: 1529282870}
   firePoints:
   - {fileID: 2010779451}
   projectilePrefab: {fileID: 2240395011606396007, guid: f4c22c74a1dd2f64f8ab395db6ca1c36, type: 3}

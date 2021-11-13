@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class WaffleAtk : MonoBehaviour
 {
+    public Animator waffleAttack;
     [SerializeField]
     private Transform[] firePoints;
     [SerializeField]
@@ -34,5 +35,6 @@ public class WaffleAtk : MonoBehaviour
 
             projectileInstance.AddForce(firePoint.forward * launchForce);
         }
+        waffleAttack.SetTrigger("WaffleAttacking");
     }
 }
