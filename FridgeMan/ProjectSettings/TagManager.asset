@@ -11,6 +11,8 @@ TagManager:
   - Waffle
   - Pancake
   - Bacon
+  - PancakeBoss
+  - DonutMan
   layers:
   - Default
   - TransparentFX
