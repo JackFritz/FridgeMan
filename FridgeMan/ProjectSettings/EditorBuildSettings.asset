@@ -47,4 +47,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Cutscenes/StoryTime.unity
     guid: 773f5ae954b9798438cb3acb5b346b4f
+  - enabled: 1
+    path: Assets/Scenes/GridBattle3.unity
+    guid: c9379e14fbd4d654ba6e4ec43a5308cb
   m_configObjects: {}

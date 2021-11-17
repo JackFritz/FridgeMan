@@ -1442,6 +1442,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 023468381ac8b204294974e30d42cdfb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  frostDamage: {fileID: 454224600}
+  shootDamage: {fileID: 454224601}
   BaconHealthText: {fileID: 1471458467}
   BaconHealthBar: {fileID: 731010715}
 --- !u!114 &454224594
@@ -1456,6 +1458,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e4beb730ae1e4b47b86e4f1a6399453, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  baconAttack: {fileID: 1266213485}
   firePoints:
   - {fileID: 2082599661}
   projectilePrefab: {fileID: 5457255259513304037, guid: f0005f22b6822a145b69bf172be89010, type: 3}
@@ -1876,7 +1879,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a43f88e188b8da4a9f40769667ff09e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageSound: {fileID: 0}
+  damageSound: {fileID: 475018178}
 --- !u!114 &475018176
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2138,8 +2141,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 265, y: -166.66667}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 298, y: -166.66667}
+  m_SizeDelta: {x: 114, y: 21}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &490783920
 CanvasRenderer:
@@ -2171,10 +2174,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 16238bef940ff834eab3fed7b95c2742, type: 3}
-    m_FontSize: 18
+    m_FontSize: 12
     m_FontStyle: 1
     m_BestFit: 0
-    m_MinSize: 1
+    m_MinSize: 0
     m_MaxSize: 40
     m_Alignment: 0
     m_AlignByGeometry: 0
@@ -2948,7 +2951,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Color: {r: 0.6698113, g: 0.52278835, b: 0.14786398, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2989,8 +2992,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 685, y: 24}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: 720, y: 21}
+  m_SizeDelta: {x: 75, y: 75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &705507993
 GameObject:
@@ -3179,7 +3182,7 @@ GameObject:
   - component: {fileID: 731010716}
   - component: {fileID: 731010715}
   m_Layer: 5
-  m_Name: PancakeHealthBar
+  m_Name: BaconHealthBar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3239,8 +3242,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 472, y: 24}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: 391, y: 20.6425}
+  m_SizeDelta: {x: 77.617, y: 77.6168}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &807469599
 GameObject:
@@ -4495,7 +4498,7 @@ GameObject:
   - component: {fileID: 1128859654}
   - component: {fileID: 1128859650}
   m_Layer: 0
-  m_Name: Egg
+  m_Name: Cereal
   m_TagString: Waffle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4603,8 +4606,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fed220bffd7d61048b1fc267aeb9a3f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EggHealthText: {fileID: 0}
-  EggHealthBar: {fileID: 0}
+  frostDamage: {fileID: 1128859653}
+  shootDamage: {fileID: 1128859652}
+  EggHealthText: {fileID: 1923021989}
+  EggHealthBar: {fileID: 1159797453}
 --- !u!82 &1128859652
 AudioSource:
   m_ObjectHideFlags: 0
@@ -4809,6 +4814,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f7b2149630b68a4ca1b39980bfd6cac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cerealAttack: {fileID: 1899224174}
   firePoints:
   - {fileID: 2010779451}
   - {fileID: 232582955}
@@ -4952,6 +4958,81 @@ Transform:
   m_Father: {fileID: 389506528}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1159797451
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1159797452}
+  - component: {fileID: 1159797454}
+  - component: {fileID: 1159797453}
+  m_Layer: 5
+  m_Name: CerealHealthBar
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1159797452
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1159797451}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 2, y: 0.3, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2000934652}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 557, y: 21}
+  m_SizeDelta: {x: 75, y: 75}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1159797453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1159797451}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.34021002, g: 0.414361, b: 0.6509434, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: d1eb73f2254824240b1236be69ac8c37, type: 3}
+  m_Type: 3
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 0
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1159797454
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1159797451}
+  m_CullTransparentMesh: 1
 --- !u!1 &1200714705
 GameObject:
   m_ObjectHideFlags: 0
@@ -5057,6 +5138,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1266213483}
   - component: {fileID: 1266213484}
+  - component: {fileID: 1266213485}
   m_Layer: 0
   m_Name: bacon1
   m_TagString: Untagged
@@ -5129,6 +5211,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1266213485
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1266213482}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c666c8a81c1f84e46a7eda4bd4b0063b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1267591670
 GameObject:
   m_ObjectHideFlags: 0
@@ -6023,7 +6124,7 @@ GameObject:
   - component: {fileID: 1471458466}
   - component: {fileID: 1471458467}
   m_Layer: 5
-  m_Name: PancakeHPText
+  m_Name: BaconHPText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6045,8 +6146,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 50, y: -166.66667}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: -31, y: -170.94}
+  m_SizeDelta: {x: 114.41, y: 21.451}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1471458466
 CanvasRenderer:
@@ -6078,10 +6179,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 16238bef940ff834eab3fed7b95c2742, type: 3}
-    m_FontSize: 18
+    m_FontSize: 12
     m_FontStyle: 1
     m_BestFit: 0
-    m_MinSize: 1
+    m_MinSize: 0
     m_MaxSize: 40
     m_Alignment: 0
     m_AlignByGeometry: 0
@@ -6431,7 +6532,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 509021594676968966, guid: cc013c6ef335eb9438e795ac613090fe, type: 3}
       propertyPath: m_Name
-      value: Enemy2
+      value: Waffle
       objectReference: {fileID: 0}
     - target: {fileID: 509021594676968967, guid: cc013c6ef335eb9438e795ac613090fe, type: 3}
       propertyPath: WaffleHealthBar
@@ -6920,8 +7021,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1899224172}
   - component: {fileID: 1899224173}
+  - component: {fileID: 1899224174}
   m_Layer: 0
-  m_Name: eggidle
+  m_Name: cereal_Idle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6981,7 +7083,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 9a9054077ac7d694f936a983b03e91f8, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 167b8dd6ba203054baae48a31a2ba76f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -6992,6 +7094,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1899224174
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1899224171}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0253076ecef98b84b977d4c15fb7fb54, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1920564068
 GameObject:
   m_ObjectHideFlags: 0
@@ -7089,6 +7210,85 @@ Transform:
   m_Father: {fileID: 694166448}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1923021987
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1923021988}
+  - component: {fileID: 1923021990}
+  - component: {fileID: 1923021989}
+  m_Layer: 5
+  m_Name: CerealHPText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1923021988
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1923021987}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2000934652}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 143, y: -168}
+  m_SizeDelta: {x: 114, y: 21}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1923021989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1923021987}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 16238bef940ff834eab3fed7b95c2742, type: 3}
+    m_FontSize: 12
+    m_FontStyle: 1
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 
+--- !u!222 &1923021990
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1923021987}
+  m_CullTransparentMesh: 1
 --- !u!1 &1935219205
 GameObject:
   m_ObjectHideFlags: 0
@@ -7281,6 +7481,8 @@ RectTransform:
   - {fileID: 1471458465}
   - {fileID: 696784860}
   - {fileID: 490783919}
+  - {fileID: 1923021988}
+  - {fileID: 1159797452}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

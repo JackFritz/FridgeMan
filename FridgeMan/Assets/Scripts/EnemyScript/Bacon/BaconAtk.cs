@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BaconAtk : MonoBehaviour
 {
-    // public Animator
+    public Animator baconAttack;
 
     [SerializeField]
     private Transform[] firePoints;
@@ -37,7 +37,7 @@ public class BaconAtk : MonoBehaviour
 
             projectileInstance.AddForce(firePoint.forward * launchForce);
         }
-        // .SetTrigger("");
+        baconAttack.SetTrigger("BaconAttack");
 
     }
 }

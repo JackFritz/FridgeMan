@@ -1,7 +1,22 @@
 fileFormatVersion: 2
 guid: 42619ebe542ef9949be3aecf79e74ab9
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 2968518177086888134
+    second: characterbullet_0
+  - first:
+      213: 4669156196916350094
+    second: characterbullet_1
+  - first:
+      213: -2237595745329184323
+    second: characterbullet_2
+  - first:
+      213: 660175180293334278
+    second: characterbullet_3
+  - first:
+      213: -7876676419689544184
+    second: characterbullet_4
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -41,7 +56,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -137,7 +152,112 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: characterbullet_0
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 87
+        width: 55
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c8dd8edd8b423920800000000000000
+      internalID: 2968518177086888134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: characterbullet_1
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 31
+        width: 83
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8c4306a2dc2cc040800000000000000
+      internalID: 4669156196916350094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: characterbullet_2
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 55
+        width: 28
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db18ab0668672f0e0800000000000000
+      internalID: -2237595745329184323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: characterbullet_3
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 31
+        width: 11
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 605e9e624d9692900800000000000000
+      internalID: 660175180293334278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: characterbullet_4
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 32
+        width: 7
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80685b9578c60b290800000000000000
+      internalID: -7876676419689544184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

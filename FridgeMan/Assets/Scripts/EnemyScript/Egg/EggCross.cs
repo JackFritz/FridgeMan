@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class EggCross : MonoBehaviour
 {
-    // public Animator
+    //the egg is cereal now
+    public Animator cerealAttack;
 
     [SerializeField]
     private Transform[] firePoints;
@@ -37,7 +38,7 @@ public class EggCross : MonoBehaviour
 
             projectileInstance.AddForce(firePoint.forward * launchForce);
         }
-        // .SetTrigger("");
+         cerealAttack.SetTrigger("CerealAttack");
 
     }
 }

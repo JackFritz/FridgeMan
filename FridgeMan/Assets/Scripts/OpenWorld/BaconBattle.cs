@@ -9,7 +9,7 @@ public class BaconBattle : MonoBehaviour
     {
         if (collision.gameObject.tag == "Bacon")
         {
-            SceneManager.LoadScene("BaconScene");
+            SceneManager.LoadScene("GridBattle3");
         }
         
     }
