@@ -6,8 +6,8 @@ using UnityEngine.SceneManagement;
 
 public class BossHealth : MonoBehaviour
 {
-    //public AudioSource ;
-   // public AudioSource ;
+    public AudioSource spitDamage;
+    public AudioSource frostDamage;
 
     public Text BossHealthText;
     public Image BossHealthBar;
@@ -43,12 +43,12 @@ public class BossHealth : MonoBehaviour
         if (other.gameObject.tag == "PlayerProjectile")
         {
             //Debug.Log("trigger");
-            // .Play();
+            spitDamage.Play();
             health -= 8;
         }
         else if (other.gameObject.tag == "RearProjectile")
         {
-            // .Play();
+            frostDamage.Play();
             health -= 30;
         }
 

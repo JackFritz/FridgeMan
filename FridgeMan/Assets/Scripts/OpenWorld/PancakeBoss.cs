@@ -9,7 +9,7 @@ public class PancakeBoss : MonoBehaviour
     {
         if (collision.gameObject.tag == "PancakeBoss")
         {
-            SceneManager.LoadScene("PancakeMonster");
+            SceneManager.LoadScene("GridBoss");
         }
     }
 }

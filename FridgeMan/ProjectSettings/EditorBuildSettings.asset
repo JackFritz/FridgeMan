@@ -50,4 +50,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GridBattle3.unity
     guid: c9379e14fbd4d654ba6e4ec43a5308cb
+  - enabled: 1
+    path: Assets/Scenes/GridBoss.unity
+    guid: 7a81b0c5c18f33944b4dde25107647f5
   m_configObjects: {}
