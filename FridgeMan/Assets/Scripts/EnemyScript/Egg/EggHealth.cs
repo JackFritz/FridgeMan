@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class EggHealth : MonoBehaviour
 {
+    public AudioSource frostDamage;
+    public AudioSource shootDamage;
 
     public Text EggHealthText;
     public Image EggHealthBar;
@@ -40,12 +42,12 @@ public class EggHealth : MonoBehaviour
         if (other.gameObject.tag == "PlayerProjectile")
         {
             //Debug.Log("trigger");
-            //shootDamage.Play();
+            shootDamage.Play();
             health -= 10;
         }
         else if (other.gameObject.tag == "RearProjectile")
         {
-            //frostDamage.Play();
+            frostDamage.Play();
             health -= 15;
         }
 

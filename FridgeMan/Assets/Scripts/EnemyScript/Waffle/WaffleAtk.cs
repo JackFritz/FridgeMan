@@ -35,6 +35,6 @@ public class WaffleAtk : MonoBehaviour
 
             projectileInstance.AddForce(firePoint.forward * launchForce);
         }
-        //waffleAttack.SetTrigger("WaffleAttacking");
+        waffleAttack.SetTrigger("WaffleAttacking");
     }
 }
