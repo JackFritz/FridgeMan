@@ -2,22 +2,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyLauncher : MonoBehaviour
+public class BossDrop : MonoBehaviour
 {
-    public Animator pkShoot;
+    // public Animator ;
 
     [SerializeField]
     private Transform[] firePoints;
     [SerializeField]
     private Rigidbody projectilePrefab;
     [SerializeField]
-    private float launchForce = 300f;
+    private float launchForce = 200f;
 
 
     void Start()
     {
         LaunchProjectile();
-        InvokeRepeating("LaunchProjectile", 3f, 1f);
+        InvokeRepeating("LaunchProjectile", 3f, 2f);
     }
 
     public void Update()
@@ -27,17 +27,17 @@ public class EnemyLauncher : MonoBehaviour
 
     private void LaunchProjectile()
     {
-       
+
         foreach (var firePoint in firePoints)
         {
             var projectileInstance = Instantiate(
-                projectilePrefab,
+            projectilePrefab,
                 firePoint.position,
                 firePoint.rotation);
 
-            projectileInstance.AddForce(firePoint.forward * launchForce);          
+            projectileInstance.AddForce(firePoint.forward * launchForce);
         }
-        pkShoot.SetTrigger("PKIsShooting");
+        // .SetTrigger("");
 
     }
 }

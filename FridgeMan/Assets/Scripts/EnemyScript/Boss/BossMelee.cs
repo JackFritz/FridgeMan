@@ -2,38 +2,35 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Vspread : MonoBehaviour
+public class BossMelee : MonoBehaviour
 {
-    float Cooldown = 5f;
-    float timer;
-
+    float Cooldown = 0.5f;
+    //float timer;
+    
 
     // Start is called before the first frame update
     void Start()
     {
-        timer = Cooldown;
+        //timer = Cooldown;
         //GetComponent<BoxCollider>().enabled = false;
 
         AttackSequence();
+        InvokeRepeating("AttackBegin", 5f, 5f);
     }
 
     // Update is called once per frame
     void Update()
     {
-        timer -= Time.deltaTime;
-
-        if (Input.GetKeyDown(KeyCode.K) && timer <= 0)
-        {
-            StartCoroutine(AttackSequence());
-            
-            timer = Cooldown;
-        }
+        //timer -= Time.deltaTime;
 
     }
 
     private void AttackBegin()
     {
+        StartCoroutine(AttackSequence());
 
+  
+        //timer = Cooldown;
     }
 
     public IEnumerator AttackSequence()
@@ -43,11 +40,11 @@ public class Vspread : MonoBehaviour
         GetComponent<MeshRenderer>().enabled = true;
         //GetComponent<SpriteRenderer>().enabled = true;
 
-        yield return new WaitForSeconds(0.5f);
-        
+        yield return new WaitForSeconds(1f);
+        //animator.SetBool("IsAttack", false);
         GetComponent<BoxCollider>().enabled = false;
         GetComponent<MeshRenderer>().enabled = false;
-        
+        //GetComponent<SpriteRenderer>().enabled = false;
 
     }
 }
