@@ -41,4 +41,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Cutscenes/FirstAbility.unity
     guid: 8267b8cd457205a4ea218b4c892aa476
+  - enabled: 1
+    path: Assets/Scenes/Cutscenes/PancakeMonster.unity
+    guid: c37a5605a0c6e384f83547f2673266f2
+  - enabled: 1
+    path: Assets/Scenes/Cutscenes/StoryTime.unity
+    guid: 773f5ae954b9798438cb3acb5b346b4f
   m_configObjects: {}
