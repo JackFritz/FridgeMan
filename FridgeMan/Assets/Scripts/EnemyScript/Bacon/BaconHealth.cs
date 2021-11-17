@@ -4,35 +4,33 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class PlayerHealth : MonoBehaviour
+public class BaconHealth : MonoBehaviour
 {
-    public AudioSource damageSound;
+    //public AudioSource frostDamage;
+    //public AudioSource shootDamage;
 
-    public Text healthText;
-    public Image healthBar;
+    public Text BaconHealthText;
+    public Image BaconHealthBar;
 
     float health, maxHealth = 100;
 
     // Start is called before the first frame update
     private void Start()
     {
-
-    health = maxHealth;
-
+        health = maxHealth;
     }
 
     // Update is called once per frame
     private void Update()
     {
         //Debug.Log("HP: " + health.ToString() + "%");
-        healthText.text = "HP: " + health.ToString() + "%";
+        BaconHealthText.text = "HP: " + health.ToString() + "%";
         HealthBarFiller();
-        
     }
 
     void HealthBarFiller()
     {
-        healthBar.fillAmount = health / maxHealth;
+        BaconHealthBar.fillAmount = health / maxHealth;
     }
 
 
@@ -40,22 +38,19 @@ public class PlayerHealth : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        //Debug.Log(other.gameObject.tag);
+        Debug.Log(other.gameObject.tag);
 
-        if (other.gameObject.tag == "Projectile")
+        if (other.gameObject.tag == "PlayerProjectile")
         {
-            Debug.Log("trigger");
-            damageSound.Play();
+            //Debug.Log("trigger");
+            //shootDamage.Play();
             health -= 5;
         }
-
-        else if (other.gameObject.tag == "HeavyDamage")
+        else if (other.gameObject.tag == "RearProjectile")
         {
-            Debug.Log("trigger");
-            damageSound.Play();
+            //frostDamage.Play();
             health -= 15;
         }
-
 
 
         if (health <= 0)

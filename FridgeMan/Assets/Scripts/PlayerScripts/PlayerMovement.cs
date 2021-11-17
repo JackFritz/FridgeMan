@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    public AudioSource damageSound;
+
     float timer;
     float moveDist = 3.5f;      //How much the player is moving//
     float gridWidth = 3.5f;      //Left Right Move limit//
@@ -41,4 +43,16 @@ public class PlayerMovement : MonoBehaviour
             timer = .25f;
         }
     }
-}
+    private void OnTriggerEnter(Collider other)
+    {
+        //Debug.Log(other.gameObject.tag);
+
+        if (other.gameObject.tag == "HeavyDamage")
+        {
+            Debug.Log("trigger");
+            damageSound.Play();
+            timer = 1.5f;
+        }
+    }
+
+    }

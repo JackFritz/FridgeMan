@@ -2,21 +2,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class WaffleAtk : MonoBehaviour
+public class BaconAtk : MonoBehaviour
 {
-    public Animator waffleAttack;
+    // public Animator
+
     [SerializeField]
     private Transform[] firePoints;
     [SerializeField]
     private Rigidbody projectilePrefab;
     [SerializeField]
-    private float launchForce = 450f;
+    private float launchForce = 300f;
 
 
     void Start()
     {
         LaunchProjectile();
-        InvokeRepeating("LaunchProjectile", 7f, 5f);
+        InvokeRepeating("LaunchProjectile", 1f, 1f);
     }
 
     public void Update()
@@ -26,15 +27,17 @@ public class WaffleAtk : MonoBehaviour
 
     private void LaunchProjectile()
     {
+
         foreach (var firePoint in firePoints)
         {
             var projectileInstance = Instantiate(
-                projectilePrefab,
+            projectilePrefab,
                 firePoint.position,
                 firePoint.rotation);
 
             projectileInstance.AddForce(firePoint.forward * launchForce);
         }
-        waffleAttack.SetTrigger("WaffleAttacking");
+        // .SetTrigger("");
+
     }
 }
