@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Menus/MainMenu.unity
     guid: d18c1761cbecaaa4fa3fbbe90a0d0ebc
   - enabled: 1
-    path: Assets/Scenes/GridBattle.unity
+    path: Assets/Scenes/PancakeParadise/GridBattle.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
     path: Assets/Scenes/Menus/Instructions.unity
@@ -18,7 +18,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Menus/Credits.unity
     guid: 55e78c41fb47d02449d44a77ba558114
   - enabled: 1
-    path: Assets/Scenes/PancakeParadise.unity
+    path: Assets/Scenes/PancakeParadise/PancakeParadise.unity
     guid: 0694f9fc1aacd4345a76faa6670d4d35
   - enabled: 1
     path: Assets/Scenes/Cutscenes/IntroCutPart1.unity
@@ -36,7 +36,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Cutscenes/WaffleScene.unity
     guid: cec4d42c2852b5f419c33e41c61767c7
   - enabled: 1
-    path: Assets/Scenes/GridBattle2.unity
+    path: Assets/Scenes/PancakeParadise/GridBattle2.unity
     guid: b494efce7f1ea84499fbc087970137e6
   - enabled: 1
     path: Assets/Scenes/Cutscenes/FirstAbility.unity
@@ -48,12 +48,21 @@ EditorBuildSettings:
     path: Assets/Scenes/Cutscenes/StoryTime.unity
     guid: 773f5ae954b9798438cb3acb5b346b4f
   - enabled: 1
-    path: Assets/Scenes/GridBattle3.unity
+    path: Assets/Scenes/PancakeParadise/GridBattle3.unity
     guid: c9379e14fbd4d654ba6e4ec43a5308cb
   - enabled: 1
-    path: Assets/Scenes/GridBoss.unity
+    path: Assets/Scenes/PancakeParadise/GridBoss.unity
     guid: 7a81b0c5c18f33944b4dde25107647f5
   - enabled: 1
-    path: Assets/Scenes/FoodKingdom.unity
+    path: Assets/Scenes/FoodKingdom/FoodKingdom.unity
     guid: 4653f8c91591fcd42bd7996f645e39da
+  - enabled: 1
+    path: Assets/Scenes/Cutscenes/DragonBacon.unity
+    guid: 79c2a59a00bbae64aa760ec27b6145da
+  - enabled: 1
+    path: Assets/Scenes/Cutscenes/FrozenWaffle.unity
+    guid: 1c385cf978f06f44e8b231a196bf9130
+  - enabled: 1
+    path: Assets/Scenes/Cutscenes/PKBossDefeated.unity
+    guid: 266cb7e7ddb7b164e93eb549bea53521
   m_configObjects: {}

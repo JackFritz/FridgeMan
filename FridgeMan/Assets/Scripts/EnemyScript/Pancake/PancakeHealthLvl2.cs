@@ -55,7 +55,7 @@ public class PancakeHealthLvl2 : MonoBehaviour
 
         if (health <= 0)
         {
-            SceneManager.LoadScene("PancakeParadise");
+            SceneManager.LoadScene("FrozenWaffle");
         }
     }
 }

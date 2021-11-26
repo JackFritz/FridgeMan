@@ -544,7 +544,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 2
-  m_Text: DURING  COMBAT                             PRESS  L  TO  USE  FREEZER 
+  m_Text: DURING  COMBAT                                PRESS  L  TO  USE  FREEZER 
     BURN
 --- !u!222 &830898712
 CanvasRenderer:
