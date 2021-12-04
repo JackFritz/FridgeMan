@@ -6,8 +6,8 @@ using UnityEngine.SceneManagement;
 
 public class BaconHealth : MonoBehaviour
 {
-    //public AudioSource frostDamage;
-    //public AudioSource shootDamage;
+    public AudioSource frostDamage;
+    public AudioSource shootDamage;
 
     public Text BaconHealthText;
     public Image BaconHealthBar;
@@ -43,19 +43,19 @@ public class BaconHealth : MonoBehaviour
         if (other.gameObject.tag == "PlayerProjectile")
         {
             //Debug.Log("trigger");
-            //shootDamage.Play();
+            shootDamage.Play();
             health -= 10;
         }
         else if (other.gameObject.tag == "RearProjectile")
         {
-            //frostDamage.Play();
+            frostDamage.Play();
             health -= 15;
         }
 
 
         if (health <= 0)
         {
-            SceneManager.LoadScene("PancakeParadise");
+            SceneManager.LoadScene("DragonBacon");
         }
     }
 }
