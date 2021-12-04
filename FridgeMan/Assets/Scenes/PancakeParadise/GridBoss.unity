@@ -836,6 +836,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71c87c926dcf9da4295798a2893d0368, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  monsterAttack: {fileID: 1589523745}
 --- !u!54 &233850627
 Rigidbody:
   m_ObjectHideFlags: 0

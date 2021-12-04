@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class BossMelee : MonoBehaviour
 {
+    //public Animator monsterAttack;
     float Cooldown = 0.5f;
     //float timer;
     
@@ -41,7 +42,7 @@ public class BossMelee : MonoBehaviour
         //GetComponent<SpriteRenderer>().enabled = true;
 
         yield return new WaitForSeconds(1f);
-        //animator.SetBool("IsAttack", false);
+       // monsterAttack.SetTrigger("MonsterAttack");
         GetComponent<BoxCollider>().enabled = false;
         GetComponent<MeshRenderer>().enabled = false;
         //GetComponent<SpriteRenderer>().enabled = false;
