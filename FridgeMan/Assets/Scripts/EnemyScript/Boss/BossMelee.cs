@@ -5,7 +5,7 @@ using UnityEngine;
 public class BossMelee : MonoBehaviour
 {
     //public Animator monsterAttack;
-    float Cooldown = 0.5f;
+    //float Cooldown = 0.5f;
     //float timer;
     
 
