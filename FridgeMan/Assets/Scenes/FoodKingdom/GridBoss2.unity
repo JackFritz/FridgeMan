@@ -1555,9 +1555,9 @@ GameObject:
   - component: {fileID: 475018174}
   - component: {fileID: 475018175}
   - component: {fileID: 475018176}
-  - component: {fileID: 475018177}
   - component: {fileID: 475018179}
   - component: {fileID: 475018178}
+  - component: {fileID: 475018177}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1705,7 +1705,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 475018169}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a16b14c615e771e4885976174812ed61, type: 3}
+  m_Script: {fileID: 11500000, guid: dca4d1341a6bc1147aa4e8e92494b59f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   damageSound: {fileID: 475018179}
@@ -3113,7 +3113,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.9811321, g: 0.7349235, b: 0.90090674, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -3170,7 +3170,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: dde5b2fb0740dad46919d30e6dd51e09, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 84b0e34ef34b81543a7d44ede5be59f1, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -4118,6 +4118,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7302c2295d97ee43ab87b2d1c531380, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spitDamage: {fileID: 1128859651}
+  frostDamage: {fileID: 1128859652}
   BossHealthText: {fileID: 1471458467}
   BossHealthBar: {fileID: 731010715}
 --- !u!1 &1151188440
@@ -6860,6 +6862,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2118514968}
   - component: {fileID: 2118514969}
+  - component: {fileID: 2118514970}
   m_Layer: 0
   m_Name: boss1
   m_TagString: Untagged
@@ -6932,6 +6935,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &2118514970
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2118514967}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 55775f043f7c505499b81f47830eafe8, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2133919311
 GameObject:
   m_ObjectHideFlags: 0

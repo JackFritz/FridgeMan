@@ -9,7 +9,7 @@ public class StoryTime : MonoBehaviour
     {
         if (collision.gameObject.tag == "DonutMan")
         {
-            SceneManager.LoadScene("StoryTime");
+            SceneManager.LoadScene("GridBoss2");
         }
     }
 }

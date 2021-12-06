@@ -6,8 +6,8 @@ using UnityEngine.SceneManagement;
 
 public class Boss2Health : MonoBehaviour
 {
-    //public AudioSource spitDamage;
-    //public AudioSource frostDamage;
+    public AudioSource spitDamage;
+    public AudioSource frostDamage;
 
     public Text BossHealthText;
     public Image BossHealthBar;
@@ -43,12 +43,12 @@ public class Boss2Health : MonoBehaviour
         if (other.gameObject.tag == "PlayerProjectile")
         {
             //Debug.Log("trigger");
-            //spitDamage.Play();
+            spitDamage.Play();
             health -= 10;
         }
         else if (other.gameObject.tag == "RearProjectile")
         {
-            //frostDamage.Play();
+            frostDamage.Play();
             health -= 25;
         }
 
@@ -56,7 +56,7 @@ public class Boss2Health : MonoBehaviour
         if (health <= 0)
         {
             //You can change what scene the game trasitions to below
-            //SceneManager.LoadScene("PKBossDefeated");
+            SceneManager.LoadScene("Ending");
         }
     }
 }
