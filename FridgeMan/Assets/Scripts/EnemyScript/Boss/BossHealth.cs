@@ -55,7 +55,7 @@ public class BossHealth : MonoBehaviour
 
         if (health <= 0)
         {
-            SceneManager.LoadScene("PKBossDefeated");
+            SceneManager.LoadScene("LoadPKBossDefeated");
         }
     }
 }

@@ -55,7 +55,7 @@ public class BaconHealth : MonoBehaviour
 
         if (health <= 0)
         {
-            SceneManager.LoadScene("DragonBacon");
+            SceneManager.LoadScene("LoadDragonBacon");
         }
     }
 }

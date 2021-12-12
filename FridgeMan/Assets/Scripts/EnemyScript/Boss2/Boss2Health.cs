@@ -56,7 +56,7 @@ public class Boss2Health : MonoBehaviour
         if (health <= 0)
         {
             //You can change what scene the game trasitions to below
-            SceneManager.LoadScene("Ending");
+            SceneManager.LoadScene("LoadEnding");
         }
     }
 }

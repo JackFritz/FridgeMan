@@ -55,7 +55,7 @@ public class EnemyHealth : MonoBehaviour
 
         if (health <= 0)
         {
-            SceneManager.LoadScene("FirstAbility");
+            SceneManager.LoadScene("LoadFirstAbility");
         }
     }
 }

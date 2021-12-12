@@ -71,4 +71,19 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Cutscenes/Ending.unity
     guid: a38e0ae4e49420543933466bede375b1
+  - enabled: 1
+    path: Assets/Scenes/LoadingScreens/LoadFirstAbility.unity
+    guid: 424e58263e10aea448cf888ecbe98612
+  - enabled: 1
+    path: Assets/Scenes/LoadingScreens/LoadFrozenWaffle.unity
+    guid: 63ac5ec944121114dbe64c73e7febacf
+  - enabled: 1
+    path: Assets/Scenes/LoadingScreens/LoadDragonBacon.unity
+    guid: ab6a787c9b130aa4889604a39e2b2deb
+  - enabled: 1
+    path: Assets/Scenes/LoadingScreens/LoadPKBossDefeated.unity
+    guid: a61aee27075eacb4e9f664816300bef6
+  - enabled: 1
+    path: Assets/Scenes/LoadingScreens/LoadEnding.unity
+    guid: 537ede8385df94e4794a75b8fdec8fca
   m_configObjects: {}
