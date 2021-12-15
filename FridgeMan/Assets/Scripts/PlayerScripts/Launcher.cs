@@ -1,9 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Launcher : MonoBehaviour
 {
+    public Text AmmoText;
+    float ammo, maxAmmo = 20;
+
     public Animator shoot;
     float Cooldown = 1f;
     float timer;
@@ -20,17 +24,22 @@ public class Launcher : MonoBehaviour
     {
         timer = Cooldown;
 
+        ammo = maxAmmo;
+
     }
 
     private void Update()
     {
         timer -= Time.deltaTime;
 
-        if (Input.GetKeyDown(KeyCode.M) && timer <= 0)
+        if (Input.GetKeyDown(KeyCode.M) && timer <= 0 && ammo >= 0)
         {
             shoot.SetTrigger("PlayerIsShooting");
             LaunchProjectile();
             timer = 0.5f;
+
+            AmmoText.text = ammo.ToString();
+            ammo -= 1;
         }
 
     }
@@ -45,6 +54,15 @@ public class Launcher : MonoBehaviour
                 firePoint.rotation);
 
             projectileInstance.AddForce(firePoint.forward * launchForce);
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+      if (other.gameObject.tag == "Ammo")
+        {
+            AmmoText.text = ammo.ToString();
+            ammo += 5;
         }
     }
 }

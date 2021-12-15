@@ -6,18 +6,22 @@ using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
 {
+    
+
     public AudioSource damageSound;
 
     public Text healthText;
     public Image healthBar;
 
     float health, maxHealth = 100;
+    
 
     // Start is called before the first frame update
     private void Start()
     {
 
     health = maxHealth;
+      
 
     }
 
@@ -55,6 +59,7 @@ public class PlayerHealth : MonoBehaviour
             damageSound.Play();
             health -= 15;
         }
+
 
 
 
